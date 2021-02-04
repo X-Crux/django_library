@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>generate_db</title>
+</head>
+<body>
+<h4><a href="../">Back to start</a></h4>
+    {% if status %}
+        <h2>Записи успешно добавлены</h2>
+    {% else %}
+        <h2>Error, Desc: {{ err }} - в процессе обработки данных произошла ошибка.</h2>
+    {% endif %}
+</body>
+</html>

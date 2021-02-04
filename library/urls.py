@@ -8,5 +8,6 @@ urlpatterns = [
     path("reader_list.html", views.reader_list, name='reader_list'),
     path("reader_search.html", views.reader_search, name='reader_search'),
     path("search_result.html", views.search_result, name='search_result'),
+    path("generate_db.html", views.generate_db, name='generate_db'),
     path("clean_bd.html", views.clean_bd, name='clean_bd'),
 ]

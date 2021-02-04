@@ -9,4 +9,6 @@ class Recording(models.Model):
     date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f'{self.date.strftime("%d/%m/%Y, %H:%M")}: {self.reader} -- {self.title} -- {self.author}'
+        return f'{self.date.strftime("%d/%m/%Y, %H:%M")}: ' \
+               f'Читатель: {self.reader} || ' \
+               f'Книга: {self.title} (автор: {self.author})'
