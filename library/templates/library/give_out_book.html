@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>give_out_book</title>
+</head>
+<body>
+<h4><a href="../">Back to start</a></h4>
+    <h2>Выдача книги читателю</h2>
+    <form action="get_post.html" method="post">{% csrf_token %}
+      <p><label for="POST-name">Имя читателя:</label>
+      <input id="POST-name" type="text" name="name"></p>
+      <p><label for="POST-author">Автор книги:</label>
+      <input id="POST-author" type="text" name="author"></p>
+      <p><label for="POST-title">Название книги:</label>
+      <input id="POST-title" type="text" name="title"></p>
+      <p><input type="submit" value="Выдать"></p>
+    </form>
+</body>
+</html>

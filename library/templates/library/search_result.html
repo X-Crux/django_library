@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search_result</title>
+</head>
+<body>
+<h4><a href="reader_search.html">Back to search</a></h4>
+    {% if result %}
+        <h4>Найдено записей: {{ result.count }}</h4>
+        {% for i in result %}
+            <p>{{ i }}</p>
+        {% endfor %}
+    {% else %}
+        <h2>Записей не найдено</h2>
+    {% endif %}
+</body>
+</html>

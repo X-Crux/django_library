@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>get_post</title>
+</head>
+<body>
+<h4><a href="../">Back to start</a></h4>
+    {% if status %}
+        <h2>Запись добавлена успешно</h2>
+    {% else %}
+        <h2>Error, Desc: {{ err }} - в процессе обработки файла произошла ошибка.</h2>
+    {% endif %}
+</body>
+</html>
