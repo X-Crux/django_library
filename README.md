@@ -11,7 +11,7 @@
 
 ### Установка
 ```
-& clone https://github.com/X-Crux/django_library
+& git clone https://github.com/X-Crux/django_library
 ```
 ### Запуск
 ```
