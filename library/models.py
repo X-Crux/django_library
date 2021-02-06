@@ -5,7 +5,7 @@ class Recording(models.Model):
 
     reader = models.CharField(max_length=255)
     author = models.CharField(max_length=255)
-    title = models.CharField(max_length=255)
+    title = models.CharField(max_length=255, db_index=True)
     date = models.DateTimeField(auto_now=True)
 
     def __str__(self):

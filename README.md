@@ -5,4 +5,23 @@
 ### **-- Генерация тестовой базы читателей**
 ### **-- Очистка БД**
 
-####(Django, SQLite3)
+`Django`
+`Docker`
+`SQLite3`
+
+### Установка
+```
+& clone https://github.com/X-Crux/django_library
+```
+### Запуск
+```
+& sudo docker-compose up
+```
+### Использование
+```
+В браузере: http://127.0.0.1:8000/
+```
+### Выключение
+```
+& sudo docker-compose down
+```
